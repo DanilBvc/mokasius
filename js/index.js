@@ -55,7 +55,3 @@ burger.addEventListener('click', function() {
     burgerLine.classList.toggle('active-burger');
     burgerDisplay();
 });
-document.querySelector('.ip').addEventListener('click', function() {
-    document.querySelector('.ip').select();
-    document.execCommand("copy");
-})
