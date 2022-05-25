@@ -311,7 +311,7 @@ margin: 100px 0px 15px 0px;
 }
 .donation__price {
   position: absolute;
-  right: 32px;
+  right: 36px;
   top: 23px;
   z-index: 2;
   font-size: 26px;
