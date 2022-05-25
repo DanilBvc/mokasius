@@ -1,0 +1,249 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  min-width:320px;
+
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* standard css*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight:900;
+    color: #333333;
+    background-color: #f6f6f6;
+}
+.header {
+  margin: 0 auto;
+  background: url(../img/header/background.png) no-repeat center;
+  width: 100%;
+  min-height: 936px;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100% 936px;
+}
+.ip {
+  margin-top:5px;
+  color: #555;
+}
+.ip:hover {
+  color: blue;
+}
+.container {
+  margin: 0 auto;
+  max-width:1600px;
+}
+.header__up {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+  background-color: #fff;
+  position: fixed;
+    width: 100%;
+}
+.header__up-left {
+  display:flex;
+  align-items: center;
+}
+.logo {
+  background: #063867;
+  border-radius: 25px;
+  padding: 6px 14px;
+}
+.header__nav-items {
+  display:inline-flex;
+
+}
+.header__nav-first{
+  margin-left:60px;
+}
+.header__nav-item {
+  font-family: 'Changa', sans-serif;
+  margin-right: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #555;
+}
+
+.header__up-right {
+  font-family: 'Changa', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #555;
+}
+.header__down {
+padding-top: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__main-title{
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  letter-spacing:0.1em;
+  line-height:120px;
+  font-weight: 900;
+  font-size: 96px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom:9px;
+}
+.header__title {
+  font-weight: 500;
+  line-height: 45px;
+  color: #fff;
+}
+.header__down-right {
+}
+
+/* shop */
+.shop__title {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px 10px 11px;
+  background: #FFFFFF;
+box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+border: 1px solid transparent;
+  max-width: 753px;
+  justify-content: space-between;
+  margin:69px 0px;
+}
+.shop__title-img {
+}
+.shop__title-text {
+  font-family: 'Changa', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 88px;
+  color: #000;
+}
+
+/* donation */
+.shop__donation {
+}
+.shop__donation-title {
+  font-weight: 600;
+  line-height: 42px;
+  color: #000;
+  margin:0px 0px 68px 0px;
+}
+.shop__donation-items {
+  display: grid;
+  grid-template-columns: repeat(3, 440px);
+  grid-gap: 70px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.shop__donation-item {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shop__donation-item-title {
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.donation-link {
+}
+.donation__img {
+  border-radius: 65px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* case */
+.shop__case {
+  text-align: center;
+}
+.shop__case-title {
+margin: 100px 0px 15px 0px;
+}
+.shop__case-items {
+  display: grid;
+  grid-template-columns: repeat(3, 440px);
+  grid-gap: 0px 73px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.shop__case-item {
+}
+.shop__case-item-title {
+  margin: 60px 0px 68px 0px;
+  text-transform: uppercase;
+}
+.case__img {
+  border-radius: 65px;
+}
