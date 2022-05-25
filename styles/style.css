@@ -179,6 +179,9 @@ border: 1px solid transparent;
   justify-content: space-between;
   margin:69px 0px;
 }
+.shop {
+  padding-bottom:23px;
+}
 .shop__title-img {
 }
 .shop__title-text {
@@ -245,5 +248,28 @@ margin: 100px 0px 15px 0px;
   text-transform: uppercase;
 }
 .case__img {
+  border-radius: 65px;
+}
+/* services */
+.shop__services {
+}
+.shop__services-title {
+  margin: 76px 0px 98px 0px;
+}
+.shop__services-items {
+  display: grid;
+  grid-template-columns: repeat(3, 440px);
+  grid-gap: 73px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.shop__services-item {
+}
+.shop__services-item-title {
+  text-transform: uppercase;
+  margin-bottom: 76px;
+}
+.services__img {
   border-radius: 65px;
 }
