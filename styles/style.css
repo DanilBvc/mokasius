@@ -299,6 +299,7 @@ margin: 100px 0px 15px 0px;
 }
 .shop__services-item-title {
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 76px;
 }
 .services__img {
@@ -307,7 +308,7 @@ margin: 100px 0px 15px 0px;
 }
 .donation__price {
   position: absolute;
-  right: 36px;
+  right: 32px;
   top: 23px;
   z-index: 2;
   font-size: 26px;
@@ -669,4 +670,10 @@ z-index: 10;
 }
 .header__nav-item {
   transition: 2s ease-in all;
+}
+.donation__price-services {
+
+}
+.donation__price-case {
+  right: 43px;
 }
