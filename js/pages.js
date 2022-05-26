@@ -7,6 +7,9 @@ const cases = document.querySelectorAll('.case-link');
 const burgerLine = document.querySelector('.burger-line');
 const burger = document.querySelector('.burger');
 
+txtToCopy = document.getElementById('copy-text'),
+btnToCopy = document.getElementById('copy');
+
 function displayPopup() {
     let body = document.querySelector('body');
     if(body.style.overflow === 'hidden') {
@@ -53,3 +56,17 @@ burger.addEventListener('click', function() {
     burgerDisplay();
 });
 
+btnToCopy.addEventListener('click', function() {
+    txtToCopy.select();
+    if(document.execCommand( 'copy' )) {
+        btnCopy.classList.add( 'copied' );
+
+        let temp = setInterval( function(){
+            btnCopy.classList.remove( 'copied' );
+            clearInterval(temp);
+          }, 600 );
+    }else {
+        console.log('smth wrong');
+    }
+    return false;
+})

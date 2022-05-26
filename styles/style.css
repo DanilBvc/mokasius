@@ -668,8 +668,11 @@ z-index: 10;
   background: #ffa62a;
 
 }
-.header__nav-item {
-  transition: 2s ease-in all;
+.header__nav-item:hover {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #555;
 }
 .donation__price-services, .donation__price-case {
   background-color: #FF9900;
