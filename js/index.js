@@ -1,11 +1,15 @@
 const closeArea = document.querySelector('.modal__area-close');
-const closeModal = document.querySelector('.modal');
-const modalCloseBtn = document.querySelector('.modal__button-close');
-const arrayOfDonations = document.querySelectorAll('.donation-link');
-const arrayOfServices = document.querySelector('.services-link');
-const cases = document.querySelectorAll('.case-link');
-const burgerLine = document.querySelector('.burger-line');
-const burger = document.querySelector('.burger');
+ closeModal = document.querySelector('.modal'),
+ modalCloseBtn = document.querySelector('.modal__button-close'),
+ arrayOfDonations = document.querySelectorAll('.donation-link'),
+ arrayOfServices = document.querySelector('.services-link'),
+ cases = document.querySelectorAll('.case-link'),
+ burgerLine = document.querySelector('.burger-line'),
+ burger = document.querySelector('.burger'),
+
+ txtToCopy = document.getElementById('copy-text'),
+ btnToCopy = document.getElementById('copy');
+
 function displayPopup() {
     closeModal.classList.toggle('hidden');
     closeArea.classList.toggle('hidden');
@@ -55,7 +59,19 @@ burger.addEventListener('click', function() {
     burgerLine.classList.toggle('active-burger');
     burgerDisplay();
 });
-document.querySelector('.ip').addEventListener('click', function() {
-    document.querySelector('.ip').select();
-    document.execCommand("copy");
+
+
+btnToCopy.addEventListener('click', function() {
+    txtToCopy.select();
+    if(document.execCommand( 'copy' )) {
+        btnCopy.classList.add( 'copied' );
+
+        let temp = setInterval( function(){
+            btnCopy.classList.remove( 'copied' );
+            clearInterval(temp);
+          }, 600 );
+    }else {
+        console.log('smth wrong');
+    }
+    return false;
 })
