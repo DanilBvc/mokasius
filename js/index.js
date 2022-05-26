@@ -60,7 +60,6 @@ burger.addEventListener('click', function() {
     burgerDisplay();
 });
 
-
 btnToCopy.addEventListener('click', function() {
     txtToCopy.select();
     if(document.execCommand( 'copy' )) {
@@ -75,3 +74,4 @@ btnToCopy.addEventListener('click', function() {
     }
     return false;
 })
+
