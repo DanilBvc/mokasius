@@ -74,4 +74,3 @@ btnToCopy.addEventListener('click', function() {
     }
     return false;
 })
-
