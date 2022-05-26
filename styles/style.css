@@ -677,3 +677,9 @@ z-index: 10;
   border-radius: 15px;
 }
 
+.header__nav-item__shop {
+  scroll-behavior: smooth;
+}
+.services__wrapper {
+  position: relative;
+}
