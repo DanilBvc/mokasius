@@ -521,15 +521,17 @@ z-index: 10;
 .active-burger {
  transform: rotate(90deg);
 }
-
+ .shop__services-items {
+  grid-template-columns: repeat(1, 440px);
+ }
 /* media queries */ 
 @media(max-width:1500px) {
   .shop__donation-items, .shop__case-items, .shop__services-items {
-    grid-template-columns: repeat(2, 440px);
+    grid-template-columns: repeat(1, 440px);
   }
 }
 @media(max-width:1050px) {
-  .shop__donation-items, .shop__case-items, .shop__services-items {
+  .shop__donation-items, .shop__case-items {
     grid-template-columns: repeat(1, 440px);
   }
   .header__nav-items, .header__up-right {
