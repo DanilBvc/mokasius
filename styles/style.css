@@ -674,6 +674,7 @@ z-index: 10;
 .donation__price-services {
 
 }
-.donation__price-case {
-  right: 43px;
+
+.shop__services-item, .shop__case-item {
+  position: relative;
 }
