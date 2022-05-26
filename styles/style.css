@@ -243,7 +243,7 @@ border: 1px solid transparent;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
   position: relative;
 }
-.donation-link::before, .case-link::before, .services-link::before {
+.donation-link::before {
   content: "";
   position: absolute;
   width: 85px;
@@ -671,10 +671,9 @@ z-index: 10;
 .header__nav-item {
   transition: 2s ease-in all;
 }
-.donation__price-services {
-
+.donation__price-services, .donation__price-case {
+  background-color: #FF9900;
+  padding: 14px 13px 14px 13px;
+  border-radius: 15px;
 }
 
-.shop__services-item, .shop__case-item {
-  position: relative;
-}
