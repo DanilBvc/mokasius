@@ -686,3 +686,6 @@ z-index: 10;
 .services__wrapper {
   position: relative;
 }
+.shop__case-item-title {
+  font-size: 30px;
+  }

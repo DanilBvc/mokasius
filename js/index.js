@@ -47,9 +47,7 @@ for(let i = 0; i < arrayOfDonations.length; i++) {
     arrayOfDonations[i].addEventListener('click', displayPopup);
 }
 for(let i = 0; i < cases.length; i++) {
-    cases[i].addEventListener('click', function() {
-        alert('В разработке');
-    });
+    cases[i].addEventListener('click', displayPopup);
 }
 closeArea.addEventListener('click', displayPopup);
 modalCloseBtn.addEventListener('click', displayPopup);
